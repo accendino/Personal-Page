@@ -82,38 +82,54 @@
 
 
 	<!-- Резюме -->
-	<div class="container" id="resume">
+	<div id="resume" class="cv-section cv-section--img">	
+	<div class="container">
 		<div class="row">
 			
 			<!-- Фотография пользователя -->
 			<div class="hidden-xs col-sm-2 col-lg-3">
-				<div class="block">
-					Фотография
-				</div>
+				<div class="user-photo user-photo--big">
+				<img src="usercontent/img/photo-big.jpg" alt="Емельян Казаков">
+			</div>
 			</div>
 			<!-- // Фотография пользователя -->
 
 			<!-- Резюме пользователя -->
 			<div class="col-sm-10 col-lg-9">
-				<div class="block">
-					Резюме описание
-				</div>
 
+			<div class="heading">Резюме</div>
+			<p><span class="name">Емельян Казаков</span><br>
+			28 лет, Москва, Россия</p>
+			<div class="visible-sm visible-xs"> <!-- контент виден только на устройствах sm и менее-->
+		    						<p>Родился и вырос. Закончил три класса церковно-приходской IT <br class="visible-sm visible-xs"> школы. После чего «активно занимался самообразованием».</p>
+		    					</div>
+	
+		    					<div class="hidden-sm hidden-xs"> <!-- контент скрыт на устройствах sm и менее -->
+		    						<p>Родился и вырос. Закончил три класса церковно-приходской IT школы в Московской губернии. <br class="visible-lg">После чего «активно занимался самообразованием».</p>
+		    					</div>
+
+			<!-- опыт и образование -->	
 				<div class="row">
 					<div class="col-sm-6">
-						<div class="block">
+						<div class="heading heading--2">
 							Опыт работы
 						</div>
+						<p class="cv"><span class="colortext">Декабрь — настоящее время</span><br>Верстальщик в веб-студии “Веб-Старт”.</p>
+						<p class="cv"><span class="colortext">октябрь 2015 — Декабрь 2016</span><br>Фрилансер, веб-дизайнер.</p>
+						<p class="cv"><span class="colortext">Сентбярь 2014 — Октябрь 2015</span><br>«ООО Кибер Софт» — Системный администратор.</p>
 					</div>
-					<div class="col-sm-6">
-						<div class="block">
+					<div class="col-sm-6 down">
+						<div class="heading heading--2">
 							Образование
 						</div>
+						<p class="cv"><span class="colortext">декабрь 2016</span><br>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
+						<p class="cv"><span class="colortext">2008 — 2012</span><br>Московский Государственный университет дизайна&технологий, специальность дизайнер-технолог.</p>
 					</div>
 				</div>
-
-				<div class="block">
-					Скачать резюме
+				<!-- //опыт и образование -->
+<br class="hidden-xs">
+				<div class="button">
+					<i class="fa fa-download" aria-hidden="true"><span class="butt-font-family">Скачать резюме</span></i>					
 				</div>
 
 
@@ -121,12 +137,10 @@
 			<!-- // Резюме пользователя -->
 		</div>
 	</div>
+	</div>
 	<!-- Резюме -->
 
-
-	<div class="line"></div>
-
-
+	<!--<div class="line"></div>-->
 
 	<!-- Портфолио -->
 	<div class="container" id="portfolio">
