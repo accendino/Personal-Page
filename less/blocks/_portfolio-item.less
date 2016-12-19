@@ -7,15 +7,93 @@
 	
 }
 
-.portfolio-item-img{
+.portfolio-item__img{
+	position: relative;
+	display: block;
 	margin-bottom: 15px;
-
+	background-image: url("../img/placeholders/project_placeholder.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: center;
+	     -o-background-size: center;
+	        background-size: center;
+	min-height: 190px;
+	
+	@media (min-width: 768px){
+		height: 200px;
+		overflow: hidden;
+	}	
+	
 	@media (min-width: 1200px){
 		margin-bottom: 16px;
+		height: 250px;
 	}	
 }
 
-.portfolio-item-title{
+.portfolio-item__img:hover .portfolio-item-img__hover{
+	display: block;
+	top: 0%;
+}
+
+.portfolio-item-img__hover{
+	position: absolute;	
+	background-color: rgba(0,82,194,0.7);
+	top: 100%;       //скрыт внизу и будет выплыватьвверх при наведении //top 0 растянули по всей длине родительского элемента
+	bottom: 0;   //растянули по всей длине родительского элемента
+	left: 0;    //растянули по всей длине родительского элемента
+	right: 0;  //растянули по всей длине родительского элемента
+	padding-top: 60px;
+	text-align: center;
+	font-size: 26px;
+	color: #FFF;
+	//display: none; //будем показывать только по наведению	
+	cursor: pointer;
+	
+	-webkit-transition: top 0.5s ease-out;
+	   -moz-transition: top 0.5s ease-out;
+	    -ms-transition: top 0.5s ease-out;
+	     -o-transition: top 0.5s ease-out;
+	        transition: top 0.5s ease-out;
+		
+	.fa{
+		font-size: 64px;
+		margin-bottom: 15px;
+		//margin-top: 55px;  //60px
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%); //перемещ.относительно размеров объекта
+		   -moz-transform: translate(-50%, -50%); //перемещ.относительно размеров объекта
+		    -ms-transform: translate(-50%, -50%); //перемещ.относительно размеров объекта
+		     -o-transform: translate(-50%, -50%); //перемещ.относительно размеров объекта
+		        transform: translate(-50%, -50%); //перемещ.относительно размеров объекта
+
+		        @media (min-width: 768px){
+		        	font-size: 50px;		
+		        }	
+
+		        @media (min-width: 1200px){
+		        	font-size: 64px;
+		        	position: static;
+		        	-webkit-transform: translate(0%, 0%);
+		        	   -moz-transform: translate(0%, 0%);
+		        	    -ms-transform: translate(0%, 0%);
+		        		 -o-transform: translate(0%, 0%);
+		        			transform: translate(0%, 0%);		
+		        }	
+	}
+
+    span{
+		display: none;
+
+		@media (min-width: 1200px){
+			display: inline-block;		
+		}
+	}
+
+}
+
+.portfolio-item__title{
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
@@ -32,12 +110,12 @@
 		&:hover, &:focus, &:active{
 			color: @blueHeading;
 			text-decoration: none;
-		    border-bottom: 1px dotted @blueHeading;			
+			border-bottom: 1px dotted @blueHeading;			
 		}
 	}	
 }
 
-.portfolio-item-description{
+.portfolio-item__description{
 	font-size: 14px;
 	line-height: 20px; //1.43
 
