@@ -147,24 +147,37 @@
 	<div class="container">
 		<div class="heading heading--center">Мои работы</div>
 
-        <!-- фильтр -->
-		<div class="filter">
+		<!-- ИНСТРУКЦИЯ ПО MIXITUP!!!!	
 
-		<ul class="filter__block">
-			<li class="filter__element"><span class="filter__button filter__button--active">Все</span></li>
-			<li class="filter__element"><span class="filter__button">HTML+CSS</span></li>
-			<li class="filter__element"><span class="filter__button">Bootstrap</span></li>
-			<li class="filter__element"><span class="filter__button">Учебные</span></li>
-			<li class="filter__element"><span class="filter__button">На заказ</span></li>
+			1. Создать разметку с контейнером и элементами которые будем фильтровать;
+			2. Добавить контролы для фильтрации;
+			3. Добавить в css 
+			#Container .mix{
+			    display: none;
+			}
+			4. Добавить код в JS
+			$('#Container').mixItUp();
+			5. Подключить сам MixItUp
+			-->
+			
+        <!-- фильтр -->
+		<div class="portfolio-filter">
+
+		<ul class="portfolio-filter__block">
+			<li class="portfolio-filter__element"><span class="portfolio-filter__button portfolio-filter__button--active filter" data-filter="all">Все</span></li>
+			<li class="portfolio-filter__element"><span class="portfolio-filter__button filter" data-filter=".html-css">HTML+CSS</span></li>
+			<li class="portfolio-filter__element"><span class="portfolio-filter__button filter" data-filter=".bootstrap">Bootstrap</span></li>
+			<li class="portfolio-filter__element"><span class="portfolio-filter__button filter" data-filter=".tutorial">Учебные</span></li>
+			<li class="portfolio-filter__element"><span class="portfolio-filter__button filter" data-filter=".payed">На заказ</span></li>
 		</ul>			
 		</div>	
 		<!-- //фильтр -->
 
 		<!-- ряд с работами -->
-		<div class="row">
+		<div class="row" id="portfolio-projects">
 
 			<!-- работа 1 в портфолио -->
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix html-css tutorial">
 				<div class="portfolio-item">
 					<a class="portfolio-item__img">
 						<div class="portfolio-item-img__hover">
@@ -182,7 +195,7 @@
 			<!-- работа //1 в портфолио -->
 
 			<!-- работа 2 в портфолио -->
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix bootstrap tutorial">
 				<div class="portfolio-item">
 					<a class="portfolio-item__img">
 						<div class="portfolio-item-img__hover">
@@ -200,7 +213,7 @@
 			<!-- работа //2 в портфолио -->
 
 			<!-- работа 3 в портфолио -->
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix bootstrap tutorial">
 				<div class="portfolio-item">
 					<a class="portfolio-item__img">
 						<div class="portfolio-item-img__hover">
@@ -218,7 +231,7 @@
 			<!-- работа //3 в портфолио -->
 
 			<!-- работа 4 в портфолио -->
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix html-css payed">
 				<div class="portfolio-item">
 					<a class="portfolio-item__img">
 						<div class="portfolio-item-img__hover">
@@ -236,7 +249,7 @@
 			<!-- работа //4 в портфолио -->
 
 			<!-- работа 5 в портфолио -->
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix bootstrap payed">
 				<div class="portfolio-item">
 					<a class="portfolio-item__img">
 						<div class="portfolio-item-img__hover">
@@ -254,7 +267,7 @@
 			<!-- работа //5 в портфолио -->
 
 			<!-- работа 6 в портфолио -->
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix html-css payed">
 				<div class="portfolio-item">
 					<a class="portfolio-item__img">
 						<div class="portfolio-item-img__hover">
@@ -325,14 +338,12 @@
 	<!-- // Копирайт -->
 
 
-
-
-	
-
-
-
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script type="text/javascript" src="libs/mixitup2/jquery.mixitup.min.js"></script>
+
+
 	<script src="js/main.js"></script>
 
 </body>

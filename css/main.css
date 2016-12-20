@@ -474,7 +474,7 @@ a.mouse_scroll:focus {
 i.fa.fa-download:before {
   margin-right: 6px;
 }
-.filter {
+.portfolio-filter {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -482,54 +482,57 @@ i.fa.fa-download:before {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .filter {
+  .portfolio-filter {
     padding-top: 8px;
     margin-bottom: 50px;
   }
 }
-.filter__block {
+.portfolio-filter__block {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
-.filter__element {
+.portfolio-filter__element {
   margin: 0 0 2px;
   padding: 0;
   display: block;
 }
 @media (min-width: 768px) {
-  .filter__element {
+  .portfolio-filter__element {
     margin-right: 0px;
     display: inline-block;
   }
 }
 @media (min-width: 1200px) {
-  .filter__element {
+  .portfolio-filter__element {
     margin-right: 15px;
   }
-  .filter__element:last-child {
+  .portfolio-filter__element:last-child {
     margin-right: 0px;
   }
 }
-.filter__button {
+.portfolio-filter__button {
   display: inline-block;
   color: #cecece;
   padding: 12px 31px 15px;
   cursor: pointer;
 }
-.filter__button:hover {
+.portfolio-filter__button:hover {
   color: #000;
 }
-.filter__button--active {
+.portfolio-filter__button--active {
   border: 2px solid #0052c2;
   padding: 8px 22px 4px;
   color: #000;
 }
 @media (min-width: 768px) {
-  .filter__button--active {
+  .portfolio-filter__button--active {
     padding: 10px 29px 13px;
   }
+}
+#portfolio-projects .mix {
+  display: none;
 }
 .portfolio-item {
   margin-right: auto;
