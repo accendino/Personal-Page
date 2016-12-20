@@ -46,6 +46,18 @@ $(document).ready(function() {
 	//    highlightSelector:"nav a"
 	//});
 
+    // MixItUp - фильтрация работ в портфолио
 	$('#portfolio-projects').mixItUp();	
+
+	// FancyBox - galery
+	$(".fancybox").fancybox({
+			// Default - with fix from scroll to top
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+    });
+	// End of FancyBox - galery
 
 }); 
