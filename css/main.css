@@ -536,8 +536,12 @@ i.fa.fa-download:before {
 }
 .portfolio-item {
   margin-right: auto;
+  margim-left: auto;
   margin-bottom: 40px;
   max-width: 360px;
+}
+#portfolio-projects {
+  text-align: center;
 }
 .portfolio-item__img {
   position: relative;
