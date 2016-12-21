@@ -4,6 +4,14 @@
 	margin-bottom: 40px;
 	max-width: 360px;
 	//width: 290px;
+		
+	@media (min-width: 768px){
+		//margin-bottom: px;
+	}	
+	
+	@media (min-width: 1200px){
+		margin-bottom: 72px;
+	}	
 }
 
 #portfolio-projects{
@@ -14,14 +22,14 @@
 	position: relative;
 	display: block;
 	overflow: hidden;
-	margin-bottom: 15px;
+	margin-bottom: 17px; //15
 	background-image: url("../img/placeholders/project_placeholder.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	-webkit-background-size: center;
-	     -o-background-size: center;
-	        background-size: center;
-	min-height: 190px;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	height: 190px;	
 	
 	@media (min-width: 768px){
 		min-height: 150px;

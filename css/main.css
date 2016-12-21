@@ -479,7 +479,7 @@ i.fa.fa-download:before {
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .portfolio-filter {
@@ -540,6 +540,11 @@ i.fa.fa-download:before {
   margin-bottom: 40px;
   max-width: 360px;
 }
+@media (min-width: 1200px) {
+  .portfolio-item {
+    margin-bottom: 72px;
+  }
+}
 #portfolio-projects {
   text-align: center;
 }
@@ -547,14 +552,14 @@ i.fa.fa-download:before {
   position: relative;
   display: block;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   background-image: url("../img/placeholders/project_placeholder.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: center;
-  -o-background-size: center;
-  background-size: center;
-  min-height: 190px;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 190px;
 }
 @media (min-width: 768px) {
   .portfolio-item__img {
