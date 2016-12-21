@@ -109,16 +109,9 @@ p {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.block-bg {
-  background-color: #065A97;
-  padding: 30px 0;
-}
 .block-bg-copyright {
   background-color: #003f6d;
   padding: 30px 0;
-}
-.line {
-  border-top: 1px solid #e9eff3;
 }
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens - adaptive styles bofore 1200px */
@@ -758,78 +751,92 @@ i.fa.fa-download:before {
     font-size: 26px;
   }
 }
-.cv-section {
+.section {
   padding-top: 30px;
   padding-bottom: 40px;
   border-bottom: 1px solid #e9eff3;
 }
 @media (min-width: 768px) {
-  .cv-section {
+  .section {
     padding-top: 44px;
     padding-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
-  .cv-section {
+  .section {
     padding-top: 74px;
     padding-bottom: 90px;
   }
-  .cv-section .col-sm-6 {
+  .section .col-sm-6 {
     width: 45%;
   }
 }
-.cv-section .name {
+.section .name {
   font-size: 18px;
   font-weight: 700;
 }
-.cv-section .down {
+.section .down {
   margin-top: 40px;
 }
 @media (min-width: 768px) {
-  .cv-section .down {
+  .section .down {
     margin-top: 0px;
     margin-bottom: 50px;
   }
 }
 @media (min-width: 1200px) {
-  .cv-section .down {
+  .section .down {
     margin-bottom: 18px;
   }
 }
-.cv-section--portfolio {
+.section--portfolio {
   padding-top: 30px;
   padding-bottom: 35px;
 }
 @media (min-width: 768px) {
-  .cv-section--portfolio {
+  .section--portfolio {
     padding-top: 45px;
     padding-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
-  .cv-section--portfolio {
+  .section--portfolio {
     padding-top: 62px;
     padding-bottom: 67px;
   }
 }
-.cv-section--img {
+.section--contacts {
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+.section--img-laptop {
   background-image: none;
 }
 @media (min-width: 1500px) {
-  .cv-section--img {
+  .section--img-laptop {
     background-image: url("../img/bg/laptop.png");
     background-repeat: no-repeat;
     background-position: right 70%;
   }
 }
-.cv-section--gear {
+.section--img-gear {
   background-image: none;
 }
 @media (min-width: 1500px) {
-  .cv-section--gear {
+  .section--img-gear {
     background-image: url("../img/bg/gear.png");
     background-repeat: no-repeat;
     background-position: left 55%;
+  }
+}
+.section--img-cloud {
+  background-image: none;
+}
+@media (min-width: 1500px) {
+  .section--img-cloud {
+    background-image: url("../img/bg/cloud.png");
+    background-repeat: no-repeat;
+    background-position: right 70%;
   }
 }
 .heading {
@@ -858,6 +865,9 @@ i.fa.fa-download:before {
 .heading--center {
   text-align: center;
 }
+.heading--white {
+  color: #FFF;
+}
 .cv {
   margin-bottom: 18px;
 }
@@ -877,4 +887,41 @@ i.fa.fa-download:before {
   .cv .colortext {
     font-size: 14px;
   }
+}
+.cv .colortext--contacts {
+  color: #A2D1F4;
+  font-size: 16px;
+}
+.cv a {
+  color: #FFF;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
+}
+.cv a:hover,
+.cv a:focus,
+.cv a:active {
+  color: #ffe400;
+}
+.contacts {
+  background-color: #065a97;
+  color: #FFF;
+}
+.contacts p {
+  color: #FFF;
+  margin-bottom: 30px;
+}
+.social {
+  font-size: 32px;
+  padding-top: 19px;
+}
+.social .fa {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.social .fa:last-child {
+  margin-right: 0;
+}
+.social a {
+  text-decoration: none;
+  border-bottom: none;
 }

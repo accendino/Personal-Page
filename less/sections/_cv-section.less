@@ -1,4 +1,4 @@
-.cv-section{
+.section{
 	padding-top: 30px;
 	padding-bottom: 40px;
 	border-bottom: 1px solid #e9eff3;
@@ -38,7 +38,7 @@
 	
 }
 
-.cv-section--portfolio{
+.section--portfolio{
 	padding-top: 30px;
 	padding-bottom: 35px;
 	
@@ -54,7 +54,12 @@
 	
 }
 
-.cv-section--img{
+.section--contacts{
+	padding-top: 30px;
+	padding-bottom: 35px;
+}
+
+.section--img-laptop{
 	background-image: none;	
 	
 	@media(min-width: 1500px){
@@ -64,13 +69,23 @@
 	}
 }
 
-.cv-section--gear{
+.section--img-gear{
 	background-image: none;	
 	
 	@media(min-width: 1500px){
 		background-image: url("../img/bg/gear.png");
 		background-repeat: no-repeat;
 	    background-position: left 55%;
+	}
+}
+
+.section--img-cloud{
+	background-image: none;	
+	
+	@media(min-width: 1500px){
+		background-image: url("../img/bg/cloud.png");
+		background-repeat: no-repeat;
+	    background-position: right 70%;
 	}
 }
 
@@ -101,7 +116,9 @@
 	text-align: center;
 }
 
-
+.heading--white{
+	color: #FFF;
+}
 
 .cv{
    margin-bottom: 18px;	
@@ -120,6 +137,21 @@
 		@media (min-width: 768px){
 		font-size: 14px;				
 	}
+	}
+
+	.colortext--contacts{
+		color: #A2D1F4;
+		font-size: 16px;
+	}
+
+	a{
+		color: #FFF;
+		text-decoration: none;
+		border-bottom: 1px dotted #fff;
+		
+		&:hover, &:focus, &:active,{
+			color: @yellow;
+		}
 	}
 	
 }
