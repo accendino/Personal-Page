@@ -635,6 +635,7 @@ i.fa.fa-download:before {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: left;
 }
 @media (min-width: 1200px) {
   .portfolio-item__title {
@@ -664,6 +665,7 @@ i.fa.fa-download:before {
 .portfolio-item__description {
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
 }
 @media (min-width: 1200px) {
   .portfolio-item__description {
@@ -871,4 +873,3 @@ i.fa.fa-download:before {
     font-size: 14px;
   }
 }
-/*# sourceMappingURL=main.css.map */
