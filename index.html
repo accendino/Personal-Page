@@ -43,9 +43,14 @@
 	    <div class="header">
 	    	<div class="header-inner">
 	    		<nav class="navigation">
-	    			<div class="navigation__toggle">
-	    				<i class="fa fa-bars" aria-hidden="true"></i>
-	    			</div>
+	    		<!-- иконка навигации -->
+	    			<!--<div class="navigation__toggle"> 
+	    				<<i class="fa fa-bars" aria-hidden="true"></i>
+	    			</div> -->
+	    			<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+					    <span>toggle menu</span>
+				    </button>
+	    			<!-- //иконка навигации -->
 	    			<ul class="navigation__list">
 	    				<li><a href="#resume">Резюме</a></li>
 	    				<li><a href="#portfolio">Портфолио</a></li>
@@ -72,15 +77,9 @@
 	    				<span class="m_scroll_arrows trei"></span>
 	    			</div>
 	    		</a>
-
-
 	    	</div>
-
 	    </div>
 	    <!-- // Шапка -->
-
-
-
 
 	    <!-- Резюме -->
 	    <div id="resume" class="section section--img-laptop">	
@@ -383,7 +382,7 @@
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
 
-
+<script src="js/navicon.js"></script>
 <script src="js/main.js"></script>
 
 </body>
