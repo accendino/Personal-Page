@@ -19,8 +19,7 @@
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
-	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-	
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">	
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,20 +35,17 @@
 	    <![endif]-->
 
 	    <!-- Здесь пишем код -->
-
-
-
 	    <!-- Шапка -->
 	    <div class="header">
 	    	<div class="header-inner">
 	    		<nav class="navigation">
-	    		<!-- иконка навигации -->
+	    			<!-- иконка навигации -->
 	    			<!--<div class="navigation__toggle"> 
 	    				<<i class="fa fa-bars" aria-hidden="true"></i>
 	    			</div> -->
 	    			<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
-					    <span>toggle menu</span>
-				    </button>
+	    				<span>toggle menu</span>
+	    			</button>
 	    			<!-- //иконка навигации -->
 	    			<ul class="navigation__list">
 	    				<li><a href="#resume">Резюме</a></li>
@@ -340,17 +336,18 @@
 
 				<div class="heading heading--2 heading--white heading--form">Связаться со мной</div>
 				<!-- форма отправки -->
-				<form class="contact-form">
+				<form id="contact-form" class="contact-form">
 					<input type="text" name="name" placeholder="Имя" class="contact-form__input">
 					<input type="text" name="email" placeholder="Email" class="contact-form__input">
 
-					<div>
-					<input type="text" name="skype" placeholder="Skype" class="contact-form__input contact-form__input--half">
-					<input type="text" name="phone" placeholder="Телефон" class="contact-form__input contact-form__input--half">
+					<div class="clearfix"> <!--вместо распорки добавили класс т.к. он уже прописан в utils.less -->
+						<input type="text" name="skype" placeholder="Skype" class="contact-form__input contact-form__input--half">
+						<input type="text" name="phone" placeholder="Телефон" class="contact-form__input contact-form__input--half">
+						<!--<div style="clear:both"></div> добавляем распорку т.к. из-за обтекания нормально не оборачивет и невозможно ввести данные -->
 					</div>
 
 					<div class="contact-form___img-pencil">
-					<textarea placeholder="Ваше сообщение" class="contact-form__textarea"></textarea>
+						<textarea name="message" placeholder="Ваше сообщение" class="contact-form__textarea"></textarea>
 					</div>
 
 					<input type="submit" name="" value="Отправить" class="contact-form__submit">					
@@ -358,7 +355,6 @@
 				<!-- //форма отправки -->
 			</div>
 			<!-- //форма -->
-
 		</div>
 	</div>
 </div>
@@ -367,23 +363,27 @@
 <!-- Копирайт -->
 <div class="copyright">
 	<div class="container">
-	<p class="copyright__label">© 2016 Емельян Казаков</p>
-	<p>Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.</p>
-	<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от WebCademy.ru</p> 
+		<p class="copyright__label">© 2016 Емельян Казаков</p>
+		<p>Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.</p>
+		<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от WebCademy.ru</p> 
 	</div>
 </div>
 <!-- // Копирайт -->
 
-
+<!-- SCRIPTS -->
+<!-- vendor -->
 <script src="libs/jquery/jquery-1.11.2.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="libs/jquery.validate/jquery.validate.js"></script>
 
+<!-- custom -->
 <script src="js/navicon.js"></script>
 <script src="js/main.js"></script>
+<!-- //SCRIPTS -->
 
 </body>
 </html>

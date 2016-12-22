@@ -125,3 +125,33 @@
         font-size: 22px;
     }
 } 
+
+label.error{ //класс уже прописан в плагине
+    background-color: #c62828; //#ad1457;
+    display: block;
+    -webkit-border-radius: 8px;
+                border-radius: 8px;
+    color: #FFF;
+    padding: 5px 15px 8px; //без уголочка отступ снизу -5рх :)
+    font-weight: 500;
+    margin-bottom: 15px; 
+    //margin-top: -5px; //либо все нижеприведенное - рисуем "уголок"
+    position: relative; 
+    @corner: 12px;
+    margin-top: 2px;
+    
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 40px;  //17
+        
+        margin-left: -@corner;
+        width: 0;
+        height: 0;
+        border-bottom: @corner solid #c62828; //#ad1457;
+        border-right: @corner solid transparent;
+        border-left: @corner solid transparent;               
+                       
+    } 
+}

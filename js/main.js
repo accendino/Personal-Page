@@ -1,16 +1,5 @@
 $(document).ready(function() {
 
-	//var toggle = $("#navigation__button")
-
-    //toggle.on("click", function(e){
-    //e.preventDefault();
-    //if (toggle.hasClass("active")) {
-    // toggle.removeClass("active")
-    //} else {
-    //  toggle.addClass("active")
-    //}
-    //})
-
     /*переменные*/
 	var navToggle = $('#navigation__button');
 	var navIcon = $('.navigation__toggle .fa');
@@ -32,15 +21,6 @@ $(document).ready(function() {
         navToggle.addClass("active");
         }
 
-		//if (navIcon.hasClass(iconOpen)) {
-		//	navIcon.removeClass(iconOpen);
-		//    navIcon.addClass(iconClose);
-		//} 
-		//else {
-		//	navIcon.removeClass(iconClose);
-		//    navIcon.addClass(iconOpen);
-		//}		
-
 	})
 
 	navLink.on('click',function() {
@@ -53,23 +33,13 @@ $(document).ready(function() {
         } else {
         navToggle.addClass("active");
         }
-    }
-
-		//if ( navBlock.hasClass(navBlockOpen) ) {
-		//	if ( navIcon.hasClass(iconOpen) ){
-		//		navIcon.removeClass(iconOpen);
-		//		navIcon.addClass(iconClose);
-		//	} else {
-		//		navIcon.removeClass(iconClose);
-		//		navIcon.addClass(iconOpen);
-		//	}
-		//}
-//
+    }		
 		navBlock.removeClass(navBlockOpen);
 		
 	})
 
-//slide2id - плавная прокрутка по ссылкам внутри страницы
+
+    //slide2id - плавная прокрутка по ссылкам внутри страницы
 	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
 	    highlightSelector:"nav a"
 	});
@@ -87,5 +57,28 @@ $(document).ready(function() {
             }
     });
 	// End of FancyBox - galery
+
+	//jQuery validate JS
+
+	$('#contact-form').validate({
+		rules:{
+			name: {required: true},
+			email: {required: true, email: true},
+			//skype: {required: true},
+			//phone: {required: true},
+			message: {required: true},
+		},
+
+		messages:{
+			name: "Пожалуйста, представьтесь :)",  //что выдавать при незаполненном поле
+			email: {
+				required: "Пожалуйста, укажите свой email",
+				email: "Email адрес должен быть в формате name@domain.com - возможно Вы ввели email с ошибкой",
+			},
+			//skype: "",
+			//phone: "",
+			message: "Пожалуйста, введите текст сообщения",
+		}
+	})
 
 }); 

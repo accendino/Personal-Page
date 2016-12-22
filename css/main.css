@@ -769,6 +769,30 @@ i.fa.fa-download:before {
     font-size: 22px;
   }
 }
+label.error {
+  background-color: #c62828;
+  display: block;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  color: #FFF;
+  padding: 5px 15px 8px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  position: relative;
+  margin-top: 2px;
+}
+label.error:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 40px;
+  margin-left: -12px;
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid #c62828;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
 .cmn-toggle-switch {
   display: block;
   position: absolute;
