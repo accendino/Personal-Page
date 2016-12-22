@@ -443,6 +443,16 @@ a.mouse_scroll:focus {
   color: #FFF;
   -webkit-border-radius: 50px;
   border-radius: 50px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
+}
+.button:hover,
+.button:focus {
+  background: #fff;
+  color: #0052c2;
+}
+.button:active {
+  background: #0052c2;
+  color: #ffe400;
 }
 .button .fa {
   font-weight: 700;
@@ -793,6 +803,18 @@ label.error:after {
   border-right: 12px solid transparent;
   border-left: 12px solid transparent;
 }
+.contact-form__success {
+  background-color: #FFF;
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  color: #4CAF50;
+  padding: 5px 15px 8px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  font-size: 20px;
+}
 .cmn-toggle-switch {
   display: block;
   position: absolute;
@@ -907,9 +929,9 @@ label.error:after {
   background-image: url("../img/bg/bg-10.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: inherit;
-  -o-background-size: inherit;
-  background-size: inherit;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #FFF;
   /*text-align: center;*/
   position: relative;
