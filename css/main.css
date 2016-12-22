@@ -846,6 +846,15 @@ label.error:after {
 .cmn-toggle-switch:focus {
   outline: none;
 }
+.cmn-toggle-switch:hover span,
+.cmn-toggle-switch:hover span::before,
+.cmn-toggle-switch:hover span::after {
+  background-color: #0052c2;
+}
+.cmn-toggle-switch.active:hover span::before,
+.cmn-toggle-switch.active:hover span::after {
+  background-color: #ffe400;
+}
 .cmn-toggle-switch span {
   display: block;
   position: absolute;

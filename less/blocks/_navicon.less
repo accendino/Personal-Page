@@ -33,7 +33,15 @@
 .cmn-toggle-switch:focus {
   outline: none;  //убрать?
 }
+//
+.cmn-toggle-switch:hover span, .cmn-toggle-switch:hover span::before, .cmn-toggle-switch:hover span::after{
+  background-color: @blueHeading;
+}
 
+.cmn-toggle-switch.active:hover span::before, .cmn-toggle-switch.active:hover span::after,{
+  background-color: @yellow;
+}
+//
 .cmn-toggle-switch span {
   display: block;
   position: absolute;
