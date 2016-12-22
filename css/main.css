@@ -99,20 +99,6 @@ p {
     line-height: 28px;
   }
 }
-.block {
-  background: #FFDB4C;
-  padding: 20px;
-  color: #000;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.block-bg-copyright {
-  background-color: #003f6d;
-  padding: 30px 0;
-}
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens - adaptive styles bofore 1200px */
 /* Medium Devices, Desktops - adaptive styles bofore 992px */
@@ -1003,6 +989,7 @@ i.fa.fa-download:before {
 .contacts {
   background-color: #065a97;
   color: #FFF;
+  border-bottom: none;
 }
 .contacts p {
   color: #FFF;
@@ -1022,4 +1009,25 @@ i.fa.fa-download:before {
 .social a {
   text-decoration: none;
   border-bottom: none;
+}
+.copyright {
+  background-color: #003f6d;
+  font-size: 14px;
+  color: #5e92b9;
+  line-height: 1.4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.copyright p {
+  font-size: 14px;
+  color: #5e92b9;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+.copyright p.copyright__label {
+  color: #82b3d7;
+  font-size: 16px;
+}
+.copyright p:last-child {
+  margin-bottom: 0;
 }
