@@ -510,13 +510,13 @@ i.fa.fa-download:before {
 .portfolio-filter__button:hover {
   color: #000;
 }
-.portfolio-filter__button--active {
+.active {
   border: 2px solid #0052c2;
   padding: 8px 22px 4px;
   color: #000;
 }
 @media (min-width: 768px) {
-  .portfolio-filter__button--active {
+  .active {
     padding: 10px 29px 13px;
   }
 }
